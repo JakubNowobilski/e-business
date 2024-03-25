@@ -4,8 +4,10 @@ ENV TZ=Europe/Warsaw
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+WORKDIR /home/jaknow
+
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y vim software-properties-common wget unzip
+RUN apt-get install -y vim software-properties-common wget unzip curl zip
 
 # Python3.8
 RUN add-apt-repository ppa:deadsnakes/ppa
@@ -23,6 +25,13 @@ RUN wget https://github.com/JetBrains/kotlin/releases/download/v1.9.23/kotlin-co
 
 ENV PATH="${PATH}:/opt/kotlinc/bin"
 
-ENV DEBIAN_FRONTEND=
+# Gradle
+RUN curl -s "https://get.sdkman.io?rcupdate=false" | bash
+RUN bash -c "source /root/.sdkman/bin/sdkman-init.sh && sdk install gradle 8.7"
+CMD ["bash", "-c", "source /root/.sdkman/bin/sdkman-init.sh && gradle build"]
+CMD ["bash", "-c", "source /root/.sdkman/bin/sdkman-init.sh && gradle run"]
 
-WORKDIR /home/jaknow
+COPY build.gradle /home/jaknow
+ADD src /home/jaknow/src
+
+ENV DEBIAN_FRONTEND=
