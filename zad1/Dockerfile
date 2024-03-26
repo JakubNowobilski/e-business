@@ -28,8 +28,7 @@ ENV PATH="${PATH}:/opt/kotlinc/bin"
 # Gradle
 RUN curl -s "https://get.sdkman.io?rcupdate=false" | bash
 RUN bash -c "source /root/.sdkman/bin/sdkman-init.sh && sdk install gradle 8.7"
-CMD ["bash", "-c", "source /root/.sdkman/bin/sdkman-init.sh && gradle build"]
-CMD ["bash", "-c", "source /root/.sdkman/bin/sdkman-init.sh && gradle run"]
+CMD ["bash", "-c", "source /root/.sdkman/bin/sdkman-init.sh && gradle build && gradle run"]
 
 COPY build.gradle /home/jaknow
 ADD src /home/jaknow/src
