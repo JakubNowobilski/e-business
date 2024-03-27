@@ -15,3 +15,5 @@ Należy stworzyć obraz oraz umieścić obraz na hub.docker.com, a Dockerfile na
 Kod: https://github.com/JakubNowobilski/e-business/tree/main/zad1
 
 Dockerhub: https://hub.docker.com/r/jakubnowobilski/eb_zad1
+
+Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad1.tar.gz
