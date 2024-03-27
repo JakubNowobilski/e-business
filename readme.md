@@ -12,5 +12,6 @@ Należy stworzyć obraz oraz umieścić obraz na hub.docker.com, a Dockerfile na
 
 :white_check_mark: 5.0 Należy dodać konfigurację docker-compose [link](https://github.com/JakubNowobilski/e-business/commit/336c2245579683ca7417690c00bfe8627eb78dc6)
 
-
 Kod: https://github.com/JakubNowobilski/e-business/tree/main/zad1
+
+Dockerhub: https://hub.docker.com/r/jakubnowobilski/eb_zad1
