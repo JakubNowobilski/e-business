@@ -35,3 +35,19 @@ Należy stworzyć aplikację na frameworku Play w Scali 2.
 Kod: https://github.com/JakubNowobilski/e-business/tree/main/zad2
 
 Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad2.tar.gz
+
+**Zadanie 3 Kotlin**
+
+:white_check_mark: 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor, która pozwala na przesyłanie wiadomości na platformę Discord [link](https://github.com/JakubNowobilski/e-business/commit/fbc2d0eeda805cdf3b3d6bdd22ea8a54c470bc63)
+
+:x: 3.5 Aplikacja jest w stanie odbierać wiadomości użytkowników z platformy Discord skierowane do aplikacji (bota)
+
+:x: 4.0 Zwróci listę kategorii na określone żądanie użytkownika
+
+:x: 4.5 Zwróci listę produktów wg żądanej kategorii
+
+:x: 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack, Messenfer, Webex, Skype, Discrod
+
+Kod: https://github.com/JakubNowobilski/e-business/tree/main/zad3
+
+Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad3.tar.gz
