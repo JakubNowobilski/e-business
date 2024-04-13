@@ -18,7 +18,7 @@ Dockerhub: https://hub.docker.com/r/jakubnowobilski/eb_zad1
 
 Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad1.tar.gz
 
-**Zadanie 2 Docker**
+**Zadanie 2 Scala**
 
 Należy stworzyć aplikację na frameworku Play w Scali 2.
 
