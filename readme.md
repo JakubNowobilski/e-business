@@ -17,3 +17,21 @@ Kod: https://github.com/JakubNowobilski/e-business/tree/main/zad1
 Dockerhub: https://hub.docker.com/r/jakubnowobilski/eb_zad1
 
 Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad1.tar.gz
+
+**Zadanie 2 Docker**
+
+Należy stworzyć aplikację na frameworku Play w Scali 2.
+
+:white_check_mark: 3.0 Należy stworzyć kontroler do Produktów [link](https://github.com/JakubNowobilski/e-business/commit/97a9ee1ce26d09df0a6e7d8201b4b8c7a8ba8564)
+
+:white_check_mark: 3.5 Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane pobierane z listy [link](https://github.com/JakubNowobilski/e-business/commit/97a9ee1ce26d09df0a6e7d8201b4b8c7a8ba8564)
+
+:x: 4.0 Należy stworzyć kontrolery do Kategorii oraz Koszyka + endpointy zgodnie z CRUD
+
+:x: 4.5 Należy aplikację uruchomić na dockerze (stworzyć obraz) oraz dodać skrypt uruchamiający aplikację via ngrok
+
+:x: 5.0 Należy dodać konfigurację CORS dla dwóch hostów dla metod CRUD
+
+Kod: https://github.com/JakubNowobilski/e-business/tree/main/zad2
+
+Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad2.tar.gz
