@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Products.css';
+import Payments from './Payments';
 
 interface Product {
     id: number;
@@ -24,9 +25,7 @@ const Products: React.FC = () => {
                 console.error('Failed to fetch products', error);
             }
         };
-        fetchProducts().then(() => {
-            console.log('Products fetched');
-        })
+        fetchProducts();
     }, []);
 
     const incrementCount = (id: number) => {
@@ -59,6 +58,7 @@ const Products: React.FC = () => {
             <div className="summary">
                 <h2>Total Price: ${totalPrice.toFixed(2)}</h2>
             </div>
+            <Payments products={products.filter(product => product.count > 0)}/>
         </div>
     );
 };
