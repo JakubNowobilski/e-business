@@ -46,9 +46,9 @@ const Products: React.FC = () => {
                     <p>{product.description}</p>
                     <p>${product.price}</p>
                     <div className="counter-container">
-                        <button onClick={() => decrementCount(product.id)}>-</button>
+                        <button className={`decrement-button ${product.count === 0 ? 'disabled' : ''}`} onClick={() => decrementCount(product.id)}>-</button>
                         <span>{product.count}</span>
-                        <button onClick={() => incrementCount(product.id)}>+</button>
+                        <button className={`increment-button ${product.count === 99 ? 'disabled' : ''}`} onClick={() => incrementCount(product.id)}>+</button>
                     </div>
                 </div>
             ))}
