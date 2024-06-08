@@ -36,6 +36,10 @@ const Products: React.FC = () => {
         setProducts(products.map(product => product.id === id && product.count > 0 ? { ...product, count: product.count - 1 } : product));
     };
 
+    const resetCount = () => {
+        setProducts(products.map(product => ({ ...product, count: 0 })));
+    };
+
     const totalPrice = products.reduce((total, product) => total + product.price * product.count, 0);
 
     return (
@@ -58,6 +62,7 @@ const Products: React.FC = () => {
             <div className="summary">
                 <h2>Total Price: ${totalPrice.toFixed(2)}</h2>
             </div>
+            <button className="reset-button" onClick={resetCount}>Reset Count</button>
             <Payments products={products.filter(product => product.count > 0)}/>
         </div>
     );
