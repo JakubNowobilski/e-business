@@ -52,7 +52,7 @@ Kod: https://github.com/JakubNowobilski/e-business/tree/main/zad3
 
 Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad3.tar.gz
 
-** Zadanie 4 Go **
+**Zadanie 4 Go**
 
 :white_check_mark: 3.0 Należy stworzyć aplikację we frameworki echo w j. Go, która będzie miała kontroler Produktów zgodny z CRUD [link](https://github.com/JakubNowobilski/e-business/commit/a43c71463d104894e9c388fb98d8d9b563457e1d)
 
@@ -68,9 +68,7 @@ Kod: https://github.com/JakubNowobilski/e-business/tree/main/zad4
 
 Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad4.tar.gz
 
-** Zadanie 5 Frontend **
-
-
+**Zadanie 5 Frontend**
 
 Należy stworzyć aplikację kliencką wykorzystując bibliotekę React.js. W ramach projektu należy stworzyć trzy komponenty:
 Produkty, Koszyk oraz Płatności. Koszyk oraz Płatności powinny wysyłać do aplikacji serwerowej dane, a w Produktach
