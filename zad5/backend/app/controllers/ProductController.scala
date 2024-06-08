@@ -1,6 +1,7 @@
 package controllers
 
 import model.Product
+import play.Logger
 import play.api.libs.json._
 import play.api.mvc._
 import repositories.ProductRepository
@@ -17,6 +18,7 @@ class ProductController @Inject()(val controllerComponents: ControllerComponents
 
   def getAllProducts: Action[AnyContent] = Action {
     val products = ProductRepository.fetchAll
+    Logger.info(s"Fetched ${products.size} products from the repository")
     Ok(Json.toJson(products))
   }
 

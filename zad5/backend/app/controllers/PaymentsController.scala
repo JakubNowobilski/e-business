@@ -1,6 +1,7 @@
 package controllers
 
 import model.ProductPayment
+import play.Logger
 import play.api.libs.json.{JsValue, Json, OFormat}
 import play.api.mvc._
 import repositories.ProductRepository
@@ -14,10 +15,19 @@ class PaymentsController @Inject()(val controllerComponents: ControllerComponent
 
   def processPayment: Action[JsValue] = Action(parse.json) { request =>
     request.body.validate[List[ProductPayment]].fold(
-      problems => BadRequest("Invalid JSON"),
+      problems => {
+        Logger.error("Error: Invalid JSON")
+        BadRequest("Invalid JSON")
+      },
       payments => {
         val allProductsExist = payments.forall(payment => ProductRepository.fetchById(payment.id).isDefined)
-        if (allProductsExist) Ok("OK") else BadRequest("One or more products do not exist")
+        if (allProductsExist) {
+          Logger.info(s"Bought ${payments.size} products")
+          Ok("OK")
+        } else {
+          Logger.error("Error: one or more products do not exist")
+          BadRequest("One or more products do not exist")
+        }
       }
     )
   }
