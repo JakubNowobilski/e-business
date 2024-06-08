@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './Payments.css';
 
 interface Product {
     id: number;
@@ -18,6 +19,8 @@ const Payments: React.FC<PaymentsProps> = ({ products }) => {
             console.log(response.statusText);
             if (response.status === 200) {
                 window.alert('Payment successful!');
+            } else {
+                window.alert('Payment failed!');
             }
         } catch (error) {
             console.error('Failed to send payment', error);
@@ -25,7 +28,7 @@ const Payments: React.FC<PaymentsProps> = ({ products }) => {
     };
 
     return (
-        <button onClick={handleBuy}>Buy</button>
+        <button className="buy-button" onClick={handleBuy}>Buy</button>
     );
 };
 
