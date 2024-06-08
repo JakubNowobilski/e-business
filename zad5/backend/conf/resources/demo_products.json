@@ -1,7 +1,72 @@
 [
-  {"id": 1, "name": "Laptop", "price": 1000.0},
-  {"id": 2, "name": "Smartphone", "price": 400.0},
-  {"id": 3, "name": "Tablet", "price": 700.0},
-  {"id": 4, "name": "Smartwatch", "price": 200.0},
-  {"id": 5, "name": "Earphones", "price": 70.0}
+  {
+    "id": 1,
+    "name": "Apple MacBook Pro 14-inch",
+    "price": 1999,
+    "description": "Apple MacBook Pro with M1 Pro chip, 14-inch Retina display, 16GB RAM, 512GB SSD.",
+    "image_url": "https://example.com/images/macbook_pro_14.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Dell XPS 13",
+    "price": 1199,
+    "description": "Dell XPS 13 with Intel Core i7, 13.3-inch FHD display, 16GB RAM, 512GB SSD.",
+    "image_url": "https://example.com/images/dell_xps_13.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Samsung Galaxy S21",
+    "price": 799,
+    "description": "Samsung Galaxy S21 with Exynos 2100, 6.2-inch AMOLED display, 8GB RAM, 128GB storage.",
+    "image_url": "https://example.com/images/samsung_galaxy_s21.jpg"
+  },
+  {
+    "id": 4,
+    "name": "HP Spectre x360",
+    "price": 1299,
+    "description": "HP Spectre x360 convertible laptop with Intel Core i7, 13.3-inch 4K OLED display, 16GB RAM, 512GB SSD.",
+    "image_url": "https://example.com/images/hp_spectre_x360.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Google Pixel 6",
+    "price": 699,
+    "description": "Google Pixel 6 with Google Tensor chip, 6.4-inch OLED display, 8GB RAM, 128GB storage.",
+    "image_url": "https://example.com/images/google_pixel_6.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Asus ROG Zephyrus G14",
+    "price": 1499,
+    "description": "Asus ROG Zephyrus G14 gaming laptop with AMD Ryzen 9, 14-inch QHD display, 16GB RAM, 1TB SSD.",
+    "image_url": "https://example.com/images/asus_rog_zephyrus_g14.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Sony Xperia 5 III",
+    "price": 999,
+    "description": "Sony Xperia 5 III with Snapdragon 888, 6.1-inch OLED display, 8GB RAM, 256GB storage.",
+    "image_url": "https://example.com/images/sony_xperia_5_iii.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Microsoft Surface Laptop 4",
+    "price": 1299,
+    "description": "Microsoft Surface Laptop 4 with Intel Core i7, 13.5-inch PixelSense display, 16GB RAM, 512GB SSD.",
+    "image_url": "https://example.com/images/microsoft_surface_laptop_4.jpg"
+  },
+  {
+    "id": 9,
+    "name": "OnePlus 9 Pro",
+    "price": 969,
+    "description": "OnePlus 9 Pro with Snapdragon 888, 6.7-inch Fluid AMOLED display, 12GB RAM, 256GB storage.",
+    "image_url": "https://example.com/images/oneplus_9_pro.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Lenovo ThinkPad X1 Carbon",
+    "price": 1399,
+    "description": "Lenovo ThinkPad X1 Carbon with Intel Core i7, 14-inch FHD display, 16GB RAM, 512GB SSD.",
+    "image_url": "https://example.com/images/lenovo_thinkpad_x1_carbon.jpg"
+  }
 ]
