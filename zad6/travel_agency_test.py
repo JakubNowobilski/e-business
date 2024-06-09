@@ -290,7 +290,7 @@ class TravelAgencyTest(unittest.TestCase):
     def test_should_register_as_reader(self):
         # given
         driver = self.driver
-        new_reader_login = "new_reader@new_reader.com"
+        new_reader_login = "new_reader@reader.com"
 
         # when
         driver.get(APP_URL)
