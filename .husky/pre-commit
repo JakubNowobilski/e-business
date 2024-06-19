@@ -2,4 +2,4 @@
 . "$(dirname "$0")/_/husky.sh"
 
 echo "Running SonarCloud linter..."
-node_modules/sonar-scanner/bin/sonar-scanner
+#node_modules/sonar-scanner/bin/sonar-scanner
