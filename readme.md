@@ -76,7 +76,7 @@ powinniśmy pobierać dane o produktach z aplikacji serwerowej. Aplikacja serwer
 Scala, Go. Dane pomiędzy wszystkimi komponentami powinny być przesyłane za pomocą React hooks.
 
 :white_check_mark: 3.0 W ramach projektu należy stworzyć dwa komponenty: Produkty oraz Płatności; Płatności powinny
-wysyłać do aplikacji serwerowej dane, a w Produktach powinniśmy pobierać dane o produktach z aplikacji serwerowej
+wysyłać do aplikacji serwerowej dane, a w Produktach powinniśmy pobierać dane o produktach z aplikacji serwerowej [link](https://github.com/JakubNowobilski/e-business/commit/3dcde52bb693b32c2407cfe92eea443117615d86)
 
 :x: 3.5 Należy dodać Koszyk wraz z widokiem; należy wykorzystać routing
 
@@ -101,7 +101,7 @@ Testy mają w sumie zawierać minimum 50 asercji (3.5). Mają również uruchami
 Proszę pamiętać o stworzeniu darmowego konta via https://education.github.com/pack.
 
 :white_check_mark: 3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium (Kotlin, Python, Java, JS, Go,
-Scala)
+Scala) [link](https://github.com/JakubNowobilski/e-business/commit/9846bf106d8b4e8264a1794e2c77d5633991748f)
 
 :x: 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50 asercji
 
@@ -121,7 +121,7 @@ Należy dodać projekt aplikacji klienckiej oraz serwerowej (jeden branch, dwa r
 (https://sonarcloud.io/). Należy poprawić aplikacje uzyskując 0 bugów, 0 zapaszków, 0 podatności, 0 błędów
 bezpieczeństwa. Dodatkowo należy dodać widżety sonarowe do README w repozytorium dane projektu z wynikami.
 
-:white_check_mark: 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w hookach gita
+:white_check_mark: 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w hookach gita [link](https://github.com/JakubNowobilski/e-business/commit/49cc16f168127c510a997636e2b2d65a2ba07997)
 
 :x: 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod aplikacji serwerowej)
 
