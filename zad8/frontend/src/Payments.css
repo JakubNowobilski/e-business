@@ -1,0 +1,10 @@
+.buy-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
