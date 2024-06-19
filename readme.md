@@ -131,6 +131,6 @@ bezpieczeństwa. Dodatkowo należy dodać widżety sonarowe do README w repozyto
 
 :x: 5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie aplikacji klienckiej
 
-https://golangci-lint.run/
-https://github.com/pinterest/ktlint
-https://scalameta.org/scalafmt/docs/installation.html
+Kod: https://github.com/JakubNowobilski/e-business/commit/49cc16f168127c510a997636e2b2d65a2ba07997
+
+Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad7.tar.gz
