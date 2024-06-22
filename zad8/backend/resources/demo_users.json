@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "6677109b9f8a8fe47e9936d1",
+    "login": "user@user.com",
+    "password": "b238c595b84321b35b8e57610c49523d4e3b9b5b5d090923e9e54f4b929bedba"
+  },
+  {
+    "_id": "6677109b9f8a8fe47e9936d2",
+    "login": "user2@user.com",
+    "password": "cf8dadf03a56c354591514e659e0da42a0887794d3c006ae6aadcd6fb95db1b5"
+  },
+  {
+    "_id": "6677109b9f8a8fe47e9936d3",
+    "login": "user3@user.com",
+    "password": "2b228cf838269762e739e4ab8ce2dfc47efe35a4c7c61ab11fd5511522f4cfc5"
+  }
+]

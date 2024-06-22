@@ -17,10 +17,9 @@ async function dropUpdateDb() {
         await db.dropDatabase();
         console.log('Dropped database:', C.mongoDbName);
 
-        const demoData = utils.readDemoDataFromFile()
+        const demoUsers = utils.readDemoUsersFromFile()
 
-        await insertIntoCollection(db, C.tripsCollection, demoData.trips)
-        await insertIntoCollection(db, C.usersCollection, demoData.users)
+        await insertIntoCollection(db, C.usersCollection, demoUsers)
 
     } catch (error) {
         console.error('Error:', error);
