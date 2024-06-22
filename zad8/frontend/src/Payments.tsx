@@ -15,7 +15,7 @@ const Payments: React.FC<PaymentsProps> = ({ products }) => {
     const handleBuy = async () => {
         try {
             const payment = products.map(product => ({ id: product.id, count: product.count }));
-            const response = await axios.post('http://localhost:9000/payments', payment);
+            const response = await axios.post('http://localhost:8080/payments', payment);
             console.log(response.statusText);
             if (response.status === 200) {
                 window.alert('Payment successful!');

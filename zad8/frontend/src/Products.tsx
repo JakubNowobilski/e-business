@@ -18,7 +18,7 @@ const Products: React.FC = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get<Product[]>('http://localhost:9000/products');
+                const response = await axios.get<Product[]>('http://localhost:8080/products');
                 const productsWithCount = response.data.map(product => ({ ...product, count: 0 })); // Initialize count to 0
                 setProducts(productsWithCount);
             } catch (error) {
