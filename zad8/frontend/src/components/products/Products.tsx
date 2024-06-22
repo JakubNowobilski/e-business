@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Products.css';
-import Payments from './Payments';
+import Payments from '../payments/Payments';
 
 interface Product {
     id: number;
