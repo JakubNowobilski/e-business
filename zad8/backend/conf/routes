@@ -1,6 +1,0 @@
-GET     /products          controllers.ProductController.getAllProducts
-GET     /products/:id      controllers.ProductController.getProduct(id: Long)
-POST    /products          controllers.ProductController.createProduct
-PUT     /products/:id      controllers.ProductController.updateProduct(id: Long)
-DELETE  /products/:id      controllers.ProductController.deleteProduct(id: Long)
-POST    /payments          controllers.PaymentsController.processPayment
