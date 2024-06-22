@@ -1,4 +1,4 @@
-.login-container {
+.user-panel {
     position: absolute;
     top: 0;
     right: 0;
@@ -7,9 +7,10 @@
     height: 150px;
     border: white solid 2px;
     border-radius: 10px;
+    background-color: #89a1a4;
 }
 
-.login-button {
+.login-button, .logout-button {
     background-color: green;
     color: white;
     border: none;
