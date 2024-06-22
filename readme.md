@@ -134,3 +134,26 @@ bezpieczeństwa. Dodatkowo należy dodać widżety sonarowe do README w repozyto
 Kod: https://github.com/JakubNowobilski/e-business/commit/49cc16f168127c510a997636e2b2d65a2ba07997
 
 Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad7.tar.gz
+
+**Zadanie 8 Oauth2**
+
+Należy skonfigurować klienta Oauth2 (4.0). Dane o użytkowniku wraz z tokenem powinny być przechowywane po stronie bazy
+serwera, a nowy token (inny niż ten od dostawcy) powinien zostać wysłany do klienta (React). Można zastosować mechanizm
+sesji lub inny dowolny (5.0). Zabronione jest tworzenie klientów bezpośrednio po stronie React'a wyłączając z
+komunikacji aplikację serwerową, np. wykorzystując auth0.
+
+Prawidłowa komunikacja: react-sewer-dostawca-serwer(via return uri)-react.
+
+:white_check_mark: 3.0 logowanie przez aplikację serwerową (bez Oauth2) [link](https://github.com/JakubNowobilski/e-business/commit/ef54e987210459fe2109c19d4338dad9e31d864a)
+
+:x: 3.5 rejestracja przez aplikację serwerową (bez Oauth2)
+
+:x: 4.0 logowanie via Google OAuth2
+
+:x: 4.5 logowanie via Facebook lub Github OAuth2
+
+:x: 5.0 zapisywanie danych logowania OAuth2 po stronie serwera
+
+Kod: https://github.com/JakubNowobilski/e-business/tree/main/zad8
+
+Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad8.tar.gz
