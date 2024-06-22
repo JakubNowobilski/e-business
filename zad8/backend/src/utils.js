@@ -38,7 +38,7 @@ function validatePayment(payment) {
 }
 
 function validateUser(user) {
-    const requiredAttributes = ["id", "count"]
+    const requiredAttributes = ["login", "password"]
     const userAttributes = Object.keys(user)
     if (userAttributes.every(e => requiredAttributes.includes(e)) &&
         requiredAttributes.every(e => userAttributes.includes(e))) {

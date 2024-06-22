@@ -33,6 +33,22 @@ async function getUserById(id) {
     }
 }
 
+async function getUserByLogin(login) {
+    try {
+        const db = await client.db(C.mongoDbName)
+        let user = await db.collection(C.usersCollection).findOne({login: login})
+        if (user !== null) {
+            console.log(`Fetched user by login: ${login}`);
+            return user
+        } else {
+            console.log(`Could not find user by login: ${login}`);
+            return undefined
+        }
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
 async function addUser(user) {
     try {
         const db = await client.db(C.mongoDbName)
@@ -72,6 +88,7 @@ async function deleteUser(id) {
 module.exports = {
     getAllUsers: getAllUsers,
     getUserById: getUserById,
+    getUserByLogin: getUserByLogin,
     addUser: addUser,
     deleteUser: deleteUser,
 }
