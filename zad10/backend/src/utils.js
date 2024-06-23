@@ -5,11 +5,6 @@ function readDemoProductsFromFile() {
     return JSON.parse(demo_products)
 }
 
-function readDemoUsersFromFile() {
-    const demo_users = fs.readFileSync('../resources/demo_users.json', 'utf8')
-    return JSON.parse(demo_users)
-}
-
 function loadDemoData(product_repository) {
     const products = readDemoProductsFromFile()
     products.forEach(p => product_repository.addProduct(p))
@@ -37,27 +32,14 @@ function validatePayment(payment) {
     }
 }
 
-function validateUser(user) {
-    const requiredAttributes = ["login", "password"]
-    const userAttributes = Object.keys(user)
-    if (userAttributes.every(e => requiredAttributes.includes(e)) &&
-        requiredAttributes.every(e => userAttributes.includes(e))) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
 function printReqSummary(req) {
     console.log("Handling " + req.method + " " + decodeURI(req.originalUrl));
 }
 
 module.exports = {
     readDemoProductsFromFile: readDemoProductsFromFile,
-    readDemoUsersFromFile: readDemoUsersFromFile,
     loadDemoData: loadDemoData,
     validateProduct: validateProduct,
     validatePayment: validatePayment,
-    validateUser: validateUser,
     printReqSummary: printReqSummary
 }
