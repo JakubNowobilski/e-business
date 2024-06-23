@@ -168,7 +168,7 @@ na chmurze.
 
 :white_check_mark: 3.0 Należy stworzyć odpowiednie instancje po stronie chmury na dockerze [link](https://github.com/JakubNowobilski/e-business/commit/efdcc0cbab3cfe4f38d46e16a8e250ac87a28804)
 
-:x: 3.5 Stworzyć odpowiedni pipeline w Github Actions do budowania aplikacji (n:x: p. via fatjar)
+:x: 3.5 Stworzyć odpowiedni pipeline w Github Actions do budowania aplikacji (np. via fatjar)
 
 :x: 4.0 Dodać notyfikację mailową o zbudowaniu aplikacji
 
