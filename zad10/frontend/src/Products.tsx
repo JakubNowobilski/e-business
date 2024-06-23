@@ -13,12 +13,14 @@ interface Product {
 }
 
 const Products: React.FC = () => {
+    const PRODUCTS_URL = `${process.env.REACT_APP_API_URL}/products`;
+
     const [products, setProducts] = useState<Product[]>([]);
 
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get<Product[]>('http://localhost:8080/products');
+                const response = await axios.get<Product[]>(PRODUCTS_URL);
                 const productsWithCount = response.data.map(product => ({ ...product, count: 0 })); // Initialize count to 0
                 setProducts(productsWithCount);
             } catch (error) {

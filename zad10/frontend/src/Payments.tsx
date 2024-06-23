@@ -12,10 +12,12 @@ interface PaymentsProps {
 }
 
 const Payments: React.FC<PaymentsProps> = ({ products }) => {
+    const PAYMENTS_URL = `${process.env.REACT_APP_API_URL}/payments`;
+
     const handleBuy = async () => {
         try {
             const payment = products.map(product => ({ id: product.id, count: product.count }));
-            const response = await axios.post('http://localhost:8080/payments', payment);
+            const response = await axios.post(PAYMENTS_URL, payment);
             console.log(response.statusText);
             if (response.status === 200) {
                 window.alert('Payment successful!');
