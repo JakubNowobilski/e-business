@@ -157,3 +157,25 @@ Prawidłowa komunikacja: react-sewer-dostawca-serwer(via return uri)-react.
 Kod: https://github.com/JakubNowobilski/e-business/tree/main/zad8
 
 Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad8.tar.gz
+
+**Zadanie 10 Chmura/CI**
+
+Należy wykorzystać GitHub Actions (dopuszczalne są inne rozwiązania CI) oraz chmurę Azure (dopuszczalne inne chmury),
+aby zbudować oraz zdeployować aplikację kliencką (frontend) oraz serwerową (backend) jako osobne dwie aplikacje.
+Należy do tego wykorzystać obrazy dockerowe, a aplikacje powinny działać na kontenerach. Dopuszczalne jest zbudowanie
+wcześniej aplikacji (jar package) oraz budowanie aplikacji via Github Actions. Należy zwrócić uwagę na zasoby dostępne
+na chmurze.
+
+:white_check_mark: 3.0 Należy stworzyć odpowiednie instancje po stronie chmury na dockerze [link](https://github.com/JakubNowobilski/e-business/commit/efdcc0cbab3cfe4f38d46e16a8e250ac87a28804)
+
+:x: 3.5 Stworzyć odpowiedni pipeline w Github Actions do budowania aplikacji (n:x: p. via fatjar)
+
+:x: 4.0 Dodać notyfikację mailową o zbudowaniu aplikacji
+
+:x: 4.5 Dodać krok z deploymentem aplikacji serwerowej oraz klienckiej na chmurę
+
+:x: 5.0 Dodać uruchomienie regresyjnych testów automatycznych (funkcjonalnych) jako krok w Actions
+
+Kod: https://github.com/JakubNowobilski/e-business/tree/main/zad10
+
+Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad10.tar.gz
