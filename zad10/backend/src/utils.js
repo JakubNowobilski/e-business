@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 function readDemoProductsFromFile() {
-    const demo_products = fs.readFileSync('../resources/demo_products.json', 'utf8')
+    const demo_products = fs.readFileSync('resources/demo_products.json', 'utf8')
     return JSON.parse(demo_products)
 }
 
