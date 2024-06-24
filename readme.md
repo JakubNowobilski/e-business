@@ -158,6 +158,29 @@ Kod: https://github.com/JakubNowobilski/e-business/tree/main/zad8
 
 Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad8.tar.gz
 
+**Zadanie 9 ChatGPT bot**
+
+Należy rozszerzyć funkcjonalność wcześniej stworzonego bota. Do niego należy stworzyć aplikajcę frontendową, która
+połączy się z osobnym serwisem, który przeanalizuje tekst od użytkownika i prześle zapytanie do GPT, a następnie
+prześle odpowiedź do użytkownika. Cały projekt należy stworzyć w Pythonie.
+
+Dla studentów, którzy nie chcą lub nie mogą korzystać z GPT, zamiast GPT należy wykorzystać LLAMA2 za pomocą narzędzi
+do wykorzystania LLM lokalnie: https://ollama.com/download/windows
+
+:white_check_mark: 3.0 należy stworzyć po stronie serwerowej osobny serwis do łącznia z chatGPT do usługi chat [link](https://github.com/JakubNowobilski/e-business/commit/2fe99aa9ad9c93cc8cf4df14bcebc0e2445be57e)
+
+:x: 3.5 należy stworzyć interfejs frontowy dla użytkownika, który komunikuje się z serwisem; odpowiedzi powinny być wysyałen do frontendowego interfejsu
+
+:x: 4.0 stworzyć listę 5 różnych otwarć oraz zamknięć rozmowy
+
+:x: 4.5 filtrowanie po zagadnieniach związanych ze sklepem (np. ograniczenie się jedynie do ubrań oraz samego sklepu) do GPT
+
+:x: 5.0 filtrowanie odpowiedzi po sentymencie
+
+Kod: https://github.com/JakubNowobilski/e-business/tree/main/zad9
+
+Demo video: https://github.com/JakubNowobilski/e-business/tree/main/demo/zad9.tar.gz
+
 **Zadanie 10 Chmura/CI**
 
 Należy wykorzystać GitHub Actions (dopuszczalne są inne rozwiązania CI) oraz chmurę Azure (dopuszczalne inne chmury),
