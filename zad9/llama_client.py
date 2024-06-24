@@ -22,7 +22,7 @@ def setup_llama_client():
 def generate_text(prompt):
     data = {
         "model": "gemma:2b",
-        "prompt": "Why is the sky blue?",
+        "prompt": prompt,
         "stream": False
     }
     response = requests.post(GENERATE_URL, data=json.dumps(data))
